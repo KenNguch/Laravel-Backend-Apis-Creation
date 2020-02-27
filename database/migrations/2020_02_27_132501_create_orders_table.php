@@ -18,6 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('order_number');
 
 
+            $table->softDeletes();
             $table->timestamps();
         });
     }
